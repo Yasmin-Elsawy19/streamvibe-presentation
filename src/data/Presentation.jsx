@@ -17,7 +17,7 @@ const slides = [
           <li>Yasmin Elsawy</li>
           <li>Sohaila Adel</li>
           <li>Nada Ali</li>
-          <li>Ahmed Mohamed</li>
+          <li>Mohamed Ahmed</li>
         </ul>
       </>
     ),
