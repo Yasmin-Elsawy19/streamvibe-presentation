@@ -71,6 +71,7 @@ const slides = [
           <li>Axios</li>
           <li>React Router DOM</li>
           <li>Framer Motion</li>
+          <li>AOS Animation Library</li>
           <li>LocalStorage</li>
           <li>Git & GitHub</li>
         </ul>
@@ -86,17 +87,195 @@ const slides = [
   },
 
   {
+    id: "structure",
+    title: "Project Structure",
+    subtitle: "Clean Architecture & Organization",
+    aos: "fade-left",
+
+    content: (
+      <>
+        <p>
+          We organized the project using a scalable and maintainable
+          structure to improve code readability, reusability, and
+          teamwork workflow.
+        </p>
+
+        <div className="structure-box">
+          <div className="folder">
+
+            <h4>📁 src/</h4>
+
+            <ul>
+              <li>assets/ → Images & static files</li>
+
+              <li>
+                components/ → Reusable UI components
+              </li>
+
+              <li>
+                common/ → Shared reusable components
+              </li>
+
+              <li>
+                details/ → Details page components
+              </li>
+
+              <li>
+                utils/ → Watchlist & helper functions
+              </li>
+
+              <li>
+                pages/ → Main application pages
+              </li>
+
+              <li>
+                services/ → API requests & Axios setup
+              </li>
+
+              <li>
+                styles/ → CSS files & responsive styling
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <h4 style={{ marginTop: "30px" }}>
+          Why This Structure?
+        </h4>
+
+        <ul>
+          <li>Improves scalability</li>
+          <li>Enhances code organization</li>
+          <li>Supports component reusability</li>
+          <li>Separates responsibilities clearly</li>
+          <li>Makes teamwork easier</li>
+        </ul>
+      </>
+    ),
+  },
+
+  {
+    id: "routing",
+    title: "Routing & Navigation",
+    subtitle: "Dynamic Navigation with React Router",
+    aos: "fade-right",
+
+    content: (
+      <>
+        <p>
+          We used React Router DOM to create dynamic navigation
+          between pages without reloading the application.
+        </p>
+
+        <ul>
+          <li>Home Page</li>
+          <li>Movies Page</li>
+          <li>TV Shows Page</li>
+          <li>Movie Details Page</li>
+          <li>TV Show Details Page</li>
+          <li>Support Page</li>
+        </ul>
+
+        <h4>Dynamic Routes</h4>
+
+        <ul>
+          <li>/movie/:id</li>
+          <li>/tv/:id</li>
+        </ul>
+
+        <p>
+          We also used useParams() to fetch dynamic IDs
+          from the URL and load the correct movie or TV show details.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    id: "features",
+    title: "Core Features",
+    subtitle: "Interactive User Experience",
+    aos: "fade-left",
+
+    content: (
+      <>
+        <ul>
+          <li>Dynamic Movies & TV Shows Fetching</li>
+          <li>Search Functionality</li>
+          <li>Trailer Modal Integration</li>
+          <li>Watchlist using LocalStorage</li>
+          <li>Responsive Design</li>
+          <li>Accordion FAQ System</li>
+          <li>Custom Country Dropdown</li>
+          <li>Skeleton Loading</li>
+          <li>Hover Effects & Smooth Animations</li>
+        </ul>
+      </>
+    ),
+  },
+
+  {
+    id: "uiux",
+    title: "UI / UX Design",
+    subtitle: "Modern Streaming Experience",
+    aos: "fade-right",
+
+    content: (
+      <>
+        <p>
+          The UI was inspired by modern OTT platforms like
+          Netflix and Disney+ to create a premium cinematic experience.
+        </p>
+
+        <ul>
+          <li>Dark Modern Theme</li>
+          <li>Glassmorphism Effects</li>
+          <li>Smooth Navigation</li>
+          <li>Interactive Components</li>
+          <li>Fully Responsive Layout</li>
+          <li>Consistent Typography & Spacing</li>
+        </ul>
+      </>
+    ),
+  },
+
+  {
+    id: "teamwork",
+    title: "Teamwork & Workflow",
+    subtitle: "Real Development Workflow",
+    aos: "fade-left",
+
+    content: (
+      <>
+        <p>
+          We worked as a real development team using GitHub workflow
+          and task distribution.
+        </p>
+
+        <ul>
+          <li>Task Distribution Between Team Members</li>
+          <li>Feature Branches</li>
+          <li>Pull Requests</li>
+          <li>Git Commits</li>
+          <li>Project Collaboration</li>
+          <li>Code Organization & Reviews</li>
+        </ul>
+      </>
+    ),
+  },
+
+  {
     id: "challenges",
     title: "Challenges Faced",
-    aos: "fade-left",
+    aos: "fade-right",
 
     content: (
       <>
         <ul>
           <li>Handling API errors and empty states</li>
           <li>Ensuring full responsiveness across devices</li>
-          <li>Managing complex animations with Framer Motion</li>
-          <li>Organizing code structure for scalability</li>
+          <li>Managing animations with Framer Motion</li>
+          <li>Organizing scalable project structure</li>
           <li>Maintaining clean Git workflow</li>
         </ul>
       </>
@@ -106,16 +285,17 @@ const slides = [
   {
     id: "learnings",
     title: "Key Learnings",
-    aos: "fade-right",
+    aos: "fade-left",
 
     content: (
       <>
         <ul>
-          <li>Improved React.js and component reusability</li>
-          <li>Better API integration and data handling</li>
-          <li>Enhanced UI/UX with animations</li>
-          <li>Responsive design with CSS Grid/Flexbox</li>
-          <li>Team collaboration and workflow simulation</li>
+          <li>Improved React.js skills</li>
+          <li>Better API Integration</li>
+          <li>Advanced UI/UX Design</li>
+          <li>Component Reusability</li>
+          <li>Responsive Web Design</li>
+          <li>Team Collaboration</li>
         </ul>
       </>
     ),
@@ -124,15 +304,16 @@ const slides = [
   {
     id: "future",
     title: "Future Enhancements",
-    aos: "fade-left",
+    aos: "fade-right",
 
     content: (
       <>
         <ul>
-          <li>Personalized recommendations using AI</li>
-          <li>Social features (sharing lists, ratings)</li>
-          <li>Multi-language & accessibility improvements</li>
-          <li>Performance optimization</li>
+          <li>AI-based Recommendations</li>
+          <li>User Authentication System</li>
+          <li>Advanced Filtering</li>
+          <li>Multi-language Support</li>
+          <li>Performance Optimization</li>
         </ul>
       </>
     ),
@@ -157,12 +338,8 @@ const slides = [
           <li>Responsive design across devices</li>
         </ul>
 
-        <p>
-          🔗 Live Demo Link:
-        </p>
-
         <a
-          href=" https://stream-vibe-beta.vercel.app/"
+          href="https://stream-vibe-beta.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
           className="demo-btn"
@@ -186,6 +363,11 @@ const slides = [
           our teamwork.
         </p>
 
+        <p>
+          StreamVibe represents a complete OTT streaming experience
+          built using modern front-end technologies and best practices.
+        </p>
+
         <h3>Thank You 🎬</h3>
       </>
     ),
@@ -195,60 +377,91 @@ const slides = [
 export default function Presentation() {
 
   useEffect(() => {
+
     AOS.init({
       duration: 1400,
       once: false,
       easing: "ease-in-out",
       offset: 120,
     });
+
   }, []);
 
   return (
+
     <div className="app">
 
       {/* Navbar */}
 
       <nav className="navbar">
-        <div className="logo">StreamVibe</div>
+
+        <div className="logo">
+          StreamVibe
+        </div>
 
         <div className="nav-links">
+
           <a href="#overview">Overview</a>
+
           <a href="#technologies">Tech</a>
+
+          <a href="#features">Features</a>
+
           <a href="#demo">Demo</a>
+
           <a href="#conclusion">Conclusion</a>
+
         </div>
+
       </nav>
 
       {/* Hero */}
 
-     <header className="hero">
-  <div className="hero-content" data-aos="zoom-out">
-    <h1>StreamVibe</h1>
-    <h3>Modern OTT Streaming Platform</h3>
-    <p>
-      Graduation project showcasing responsive design,
-      API integration, and interactive user experience.
-    </p>
+      <header className="hero">
 
-    <a href="#overview" className="hero-btn">
-      Start Presentation
-    </a>
-  </div>
-</header>
+        <div
+          className="hero-content"
+          data-aos="zoom-out"
+        >
 
+          <h1>StreamVibe</h1>
+
+          <h3>
+            Modern OTT Streaming Platform
+          </h3>
+
+          <p>
+            Graduation project showcasing responsive design,
+            API integration, animations, and interactive
+            user experience.
+          </p>
+
+          <a
+            href="#overview"
+            className="hero-btn"
+          >
+            Start Presentation
+          </a>
+
+        </div>
+
+      </header>
 
       {/* Slides */}
 
       {slides.map((slide) => (
+
         <section
           key={slide.id}
           id={slide.id}
           className="slide-section"
         >
+
           <div
             className="slide-card"
             data-aos={slide.aos}
           >
+
             <h1>{slide.title}</h1>
 
             {slide.subtitle && (
@@ -256,36 +469,54 @@ export default function Presentation() {
             )}
 
             {slide.content}
+
           </div>
+
         </section>
+
       ))}
-      {/* FOOTER */}
-<footer className="footer">
 
-  <div className="footer-content">
+      {/* Footer */}
 
-    <h1 className="footer-logo">
-      StreamVibe
-    </h1>
+      <footer className="footer">
 
-    <p className="footer-subtitle">
-      Designed & Developed by Yasmin Elsawy
-    </p>
+        <div className="footer-content">
 
-    <div className="footer-links">
-      <a href="#overview">Overview</a>
-      <a href="#technologies">Technologies</a>
-      <a href="#demo">Demo</a>
-      <a href="#conclusion">Conclusion</a>
-    </div>
+          <h1 className="footer-logo">
+            StreamVibe
+          </h1>
 
-    <div className="footer-bottom">
-      © 2026 Yasmin Elsawy — Graduation Project Presentation
-    </div>
+          <p className="footer-subtitle">
+            Designed & Developed by Yasmin Elsawy
+          </p>
 
-  </div>
+          <div className="footer-links">
 
-</footer>
+            <a href="#overview">
+              Overview
+            </a>
+
+            <a href="#technologies">
+              Technologies
+            </a>
+
+            <a href="#demo">
+              Demo
+            </a>
+
+            <a href="#conclusion">
+              Conclusion
+            </a>
+
+          </div>
+
+          <div className="footer-bottom">
+            © 2026 Yasmin Elsawy — Graduation Project Presentation
+          </div>
+
+        </div>
+
+      </footer>
 
     </div>
   );
