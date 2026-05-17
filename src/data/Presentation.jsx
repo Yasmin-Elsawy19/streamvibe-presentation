@@ -162,7 +162,7 @@ const slides = [
         </p>
 
         <a
-          href="https://stream-vibe-app.netlify.app/"
+          href=" https://stream-vibe-beta.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
           className="demo-btn"
